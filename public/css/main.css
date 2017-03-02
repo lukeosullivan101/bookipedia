@@ -1,0 +1,1267 @@
+/*----------------------------------------------------------------------------
+--------------------------- General Styling, sticky footer etc. --------------
+-----------------------------------------------------------------------------*/
+*{
+  box-sizing: border-box;
+    font-family: 'Raleway', sans-serif ;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  position:relative;
+}
+
+#app {
+  flex: 1;
+}
+
+h1{
+    font-weight: 700;
+}
+h2{
+    font-weight: 600;
+}
+h3{
+    font-weight: 500;
+}
+p{
+    font-weight: 500;
+}
+a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  font-weight: 600;
+  text-decoration: none;
+  color: #F05F40;
+}
+
+textarea{
+    resize:none;
+}
+.resizable{
+   resize:both;
+}
+/*Button Styling */
+
+input.btn{
+  background-color: #11D3C8;
+  text-transform: uppercase;
+  transition: all 0.35s;
+  font-weight: 600;
+  border-color: #11D3C8;
+  border-radius: 5px;
+}
+
+input.btn:hover{
+  background-color: #10bcb1;
+  border-color: #10bcb1;
+}
+
+button.btn-teal{
+  background-color: #11D3C8;
+  text-transform: uppercase;
+  transition: all 0.35s;
+  font-weight: 600;
+  border-color: #11D3C8;
+  color: #fff;
+  border-radius: 5px;
+}
+
+button.btn-teal:hover{
+  background-color: #10bcb1;
+  border-color: #10bcb1;
+  color: #fff;
+}
+
+button.btn-red{
+  background-color: #ED145B;
+  text-transform: uppercase;
+  transition: all 0.35s;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+}
+
+button.btn-red:hover{
+  background-color: #db1554;
+  color: #fff;
+}
+
+.btn a{
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.btn a:hover{
+    color:#fff;
+}
+
+a.btn-danger{
+  text-transform: uppercase;
+}
+.container .alert-danger ul li{
+  text-transform: uppercase;
+}
+
+/*----------------------------------------------------------------------------
+--------------------------- Button and other general Styling --------------------------
+-----------------------------------------------------------------------------*/
+.message-block .flash{
+  height: 50px;
+  margin-bottom: 37px;
+}
+
+p.panel-body{
+  margin-left:5%;
+  text-align: center;
+}
+
+/*----------------------------------------------------------------------------
+--------------------------- Message Block Styling -----------------------
+-----------------------------------------------------------------------------*/ 
+
+/*----------------------------------------------------------------------------
+--------------------------- Homepage Styling --------------
+-----------------------------------------------------------------------------*/
+
+#header{
+    background: url(../uploads/reading_list-bg.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 300px 0 320px 0;
+    position: relative;
+    top:-20px;
+}
+
+#header .block img{
+    height:130px;
+    margin-bottom: 10px;
+}
+
+#header .block p{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#books .block h3{
+    padding-top: 35px;
+    padding-left:30px;
+    padding-right:30px;
+    line-height: 27px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+ }
+
+ #books .block p{
+    color: #7B7B7B;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 28px;
+ }
+
+  #books .block img{
+    width:100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+ }
+
+#blog h3{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#blog p{
+    font-size: 16px;
+    line-height: 28px;
+}
+#blog{
+    background: url(/uploads/user_books-bg.jpg);
+    background-position: 50% 94px;
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: visible;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 50px 0;
+}
+
+#forums .block h3{
+    padding-top: 35px;
+    padding-left:30px;
+    padding-right:30px;
+    line-height: 27px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+ }
+
+ #forums .block p{
+    color: #7B7B7B;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 28px;
+ }
+
+  #forums .block img{
+    width:100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+ }
+
+#about {
+    background-color: #fff;
+}
+
+#about .container{
+  color: #000;
+  top: -20;
+}
+
+#about .container h1{
+  color: #555555;
+  font-size: 40px;
+  font-weight: 200;
+  margin-top:80px;
+}
+
+#about .container p{
+  color: #a5a9af;
+  font-size: 16px;
+}
+
+#about .container p.slogan{
+  margin-bottom: 100px;
+}
+
+#about .top{
+    background: #BFC0C1;
+    margin:30px auto;
+    height: 5px;
+    width: 80px;
+    border-radius: 50px;
+}
+
+#services{
+    background-color: #f6f9fb;
+}
+#services .container{
+  padding-bottom: 50px;
+}
+
+#services .container h1{
+  color: #555555;
+  font-size: 40px;
+  font-weight: 200;
+  margin-top: 100px;
+}
+
+#services .top{
+    background: #BFC0C1;
+    margin:30px auto;
+    height: 5px;
+    width: 80px;
+    border-radius: 50px;
+}
+#services .container h3{
+  color: #555555;
+  font-size: 30px;
+  font-weight: 200;
+  margin-top:20px;
+}
+
+#services .container i{
+  color: #bfc0c1;
+}
+
+#write:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #1d192c;
+    opacity: 0.8;
+}
+#write{
+    background: url(../uploads/write_for_us_home.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+#write h3{
+  padding-bottom: 20px;
+    line-height: 33px;
+    margin: 0;
+    font-size: 30px;
+}
+
+#write p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+#write .btn-write{
+   padding: 15px 35px;
+    border: none;
+    background-color: #fff;
+    font-size: 15px;
+    color: #333333;
+    margin-top: 30px;
+}
+
+#contact .container h1{
+  color: #555555;
+  font-size: 40px;
+  font-weight: 200;
+  margin-top: 100px;
+}
+
+#contact .container h3{
+  color: #555555;
+  font-size: 28px;
+  font-weight: 200;
+  padding-left:15px;
+}
+
+#contact .container p{
+  padding: 15px;
+  font-size: 16px;
+}
+#contact .container p a{
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+#contact .container p a:hover{
+  color: #4FE3C2;
+}
+
+/*----------------------------------------------------------------------------
+--------------------------- Login and Resgister Page Styling --------------
+-----------------------------------------------------------------------------*/
+
+.login-header{
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 0;
+}
+
+/*----------------------------------------------------------------------------
+--------------------------- Profile Styling -----------------------------------
+-----------------------------------------------------------------------------*/
+section.profile-all{
+    position: relative;
+    top:-80px;
+}
+
+.profile-header{
+
+}
+
+.bio{
+    margin-bottom: 30px;
+}
+
+.profile-header p{
+    font-size: 15px;
+}
+.profile-header a{
+    font-size: 15px;
+}
+
+.profile-image{
+    margin-right: 40px;
+}
+
+.profile-image img{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    overflow:hidden;
+}
+.profile-image-change{
+    position:relative;
+}
+.profile-image-change img:hover{
+    opacity: 0.5;
+}
+
+.profile-image-change i{
+    color:#000;
+    position:absolute;
+    opacity:0.5;
+    top: 165px;
+    left: 165px;
+}
+
+.interaction a.none {
+  text-decoration: none;
+  color: #555555;
+  transition: .3s ease-in-out;
+}
+.interaction a.none:hover{
+  color:#4FE3C2;
+}
+
+.cover-image{
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0 220px 0;
+    position: relative;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    top: -20px;
+}
+
+.cover-image-change{
+    position:relative;
+}
+.cover-image-change:hover{
+    opacity: 0.5;
+}
+
+.cover-image-change i{
+    color:#fff;
+    position:absolute;
+    opacity:0.5;
+    top: 90%;
+    left: 95%;
+}
+
+
+.statistic{
+  padding: 10px 0;
+}
+.statistic p{
+  line-height: .8;
+  font-weight: 400;
+}
+
+.statistic #stat-detail{
+  font-size: 16px;
+}
+
+#stat{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/*----------------------------------------------------------------------------
+--------------------------- Reading List Styling -----------------------------------
+-----------------------------------------------------------------------------*/
+.add-reading-list{
+   background-color: #f6f9fb;
+   border-radius: 10px;
+   padding:10px;
+   margin-bottom: 20px;
+}
+
+.reading-list-item{
+   background-color: #f6f9fb;
+   border-radius: 10px;
+   padding:15px;
+   margin: 20px 0;
+}
+
+.reading-list-item p{
+  font-weight: 600;
+  font-size: 16px; 
+}
+
+.reading-list-profile{
+  margin: 50px 0;
+}
+
+/*----------------------------------------------------------------------------
+--------------------------- Update Avatar and Cover Page Styling -----------------------
+-----------------------------------------------------------------------------*/
+.avatar{
+   background-color: #f6f9fb;
+   border-radius: 10px;
+   padding:10px;
+}
+.avatar img{
+  margin-bottom: 10px;
+}
+.avatar-details{
+    margin-bottom: 20px;
+}
+.avatar-buttons{
+
+}
+
+.cover{
+    
+}
+.cover img{
+
+}
+.cover-details{
+    margin-bottom: 40px;
+}
+
+.cover-image-edit{
+   background-color: #f6f9fb;
+   border-radius: 10px;
+   padding:10px;
+}
+.cover-buttons{
+    
+}
+.submit{
+    float:right;
+}
+
+/*----------------------------------------------------------------------------
+--------------------------- Submissions Page Styling -----------------------
+-----------------------------------------------------------------------------*/
+.submissions{
+  border: 1px solid #999999;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+}
+
+i#delete{
+  color:#B01F4C;  
+  transition: 0.3s;
+}
+
+i#delete:hover{
+  color:#911a3d;
+}
+/*----------------------------------------------------------------------------
+--------------------------- Navbar Styling -----------------------------------
+-----------------------------------------------------------------------------*/
+.navbar{
+   margin-bottom: 0;
+   position: relative
+}
+
+.navbar-brand{
+    
+}
+#logo-link img{
+  height:28px;
+  width: 130px;
+}
+.navbar .container{
+    background-color: #fff;
+    width:100%;
+    height:auto;
+    position: fixed;
+    padding: 0px 80px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(117,117,117,1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(117,117,117,1);
+    box-shadow: 0px 2px 5px 0px rgba(117,117,117,1);
+}
+
+.nav-profile{
+    width:32px;
+    height:32px;
+    position:absolute;
+    top:10px;
+    right: -40px;
+    border-radius: 50%;
+}
+
+.navbar .container .nav li a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0;
+    padding-left:0;
+    padding-right:0;
+    margin: 0 15px;
+}
+
+.navbar .container .nav li a i{
+
+    
+}
+
+.navbar .container .nav li a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4FE3C2;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar .container .nav li a:hover{
+    color: #4FE3C2;
+    background-color: #fff;
+}
+.navbar .container .nav li a:hover:before{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+  .navbar .container .navbar-right li a:before{
+  content: "";
+  position: absolute;
+  width: 0%;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.navbar .container .navbar-right li a:hover:before{
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+/*----------------------------------------------------------------------------
+--------------------------- Blog Display Page Styling ------------------------
+-----------------------------------------------------------------------------*/
+#subheader-blog{
+    width: 100%;
+    height: 200px;
+    top:-20px;
+    background-image: url(/uploads/blog-bg.jpg);
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+}
+#subheader-blog.all-posts {
+    background-image: url(/uploads/blog-bg.jpg);
+    margin-bottom: 10px;
+    max-height: 200px;
+}
+
+#subheader-blog .bg-gradient {
+    background: radial-gradient(ellipse at center,rgba(16, 25, 35, 0.44) 0,#101923 200%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73111a24',endColorstr='#111a24',GradientType=1);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+#subheader-blog .logo {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+}
+
+#subheader-blog.all-posts h1 {
+    margin-top: 0;
+}
+
+#subheader-blog .logo h1, #subheader-blog .logo p {
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+    padding: 0 10px;
+    z-index: 99;
+}
+
+#subheader-blog .logo p{
+  font-size: 16px;
+}
+#subheader-blog .logo h1 {
+    margin-bottom: 0;
+}
+
+.blog{
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  padding: 15px 0;
+  margin: 40px 0;
+}
+
+.blog:hover{
+  -webkit-box-shadow: 0px 7px 18px 2px rgba(117,117,117,0.77);
+  -moz-box-shadow: 0px 7px 18px 2px rgba(117,117,117,0.77);
+  box-shadow: 0px 7px 18px 2px rgba(117,117,117,0.77);
+}
+
+.post-details h3{
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.post-details h3 a{
+  text-decoration: none;
+}
+
+.post-details p a{
+text-decoration: none;
+}
+
+#blog-body{
+    margin-bottom: 40px;
+}
+#blog-body a, #blog-body p{
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#blog-body a:hover, #blog-body p:hover{
+  color:#4FE3C2;
+}
+
+#read-more{
+  padding: 10px 15px;
+  background-color: #11D3C8;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+#read-more:hover{
+  background-color: #10bcb1;
+}
+
+.posted-avatar{
+    border-radius: 50%;
+    height:65px;
+    width:65px;
+}
+
+.posted-avatar-blog{
+    border-radius: 50%;
+    height:45px;
+    width:45px;
+}
+
+.blog-container h3{
+  color: #555555;
+  font-size: 30px;
+}
+
+/*----------------------------------------------------------------------------
+--------------------------- Books Page Styling --------------------------
+-----------------------------------------------------------------------------*/
+#subheader{
+    width: 100%;
+    height: 200px;
+    top:-20px;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+}
+#subheader.all-books {
+    margin-bottom: 10px;
+    max-height: 200px;
+}
+
+#subheader .bg-gradient {
+    background: radial-gradient(ellipse at center,rgba(16, 25, 35, 0.27) 0,#101923 200%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73111a24',endColorstr='#111a24',GradientType=1);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+#subheader .logo {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+}
+
+#subheader.all-books h1 {
+    margin-top: 0;
+}
+
+#subheader .logo h1, #subheader .logo p {
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+    padding: 0 10px;
+    z-index: 99;
+}
+
+#subheader .logo p{
+  font-size: 16px;
+}
+#subheader .logo h1 {
+    margin-bottom: 0;
+}
+.paginate{
+  margin-top: 40px;
+}
+
+.cover-content h2{
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 60px;
+  font-weight:400;
+  padding: 180px 140px;
+}
+
+.title{
+ 
+}
+.title h2{
+  text-transform: uppercase;
+  color: #3C3C3C;
+  font-size: 60px;
+  font-weight:400;
+  margin-left:10px;
+  margin-right: 10px;
+}
+
+.summaries{
+  height: 500px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  padding: 15px 0;
+  margin: 40px 0;
+  color: #000;
+}
+
+.summaries:hover{
+  -webkit-box-shadow: 0px 7px 18px 2px rgba(117,117,117,0.77);
+  -moz-box-shadow: 0px 7px 18px 2px rgba(117,117,117,0.77);
+  box-shadow: 0px 7px 18px 2px rgba(117,117,117,0.77);
+}
+.summary-container-profile{
+  
+}
+
+.book-details h3 a{
+  text-decoration: none;
+}
+
+.book-details p a{
+  text-decoration: none;
+}
+
+.book-details h3{
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 19px;
+}
+
+.summary_photo img{
+  height:200px;
+  width: 100%;
+  display: block;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.article-cover-image-small{
+    width:100%;
+    height: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.article-cover-image{
+    width:100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    z-index:1;
+    top: -20px;
+}
+
+.article-cover-image-blog{
+    width:100%;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    z-index:1;
+    top: -20px;
+}
+
+.likes-counter{
+  margin-bottom: 20px;
+}
+.likes a{
+  font-size:16px;
+  color: #4FE3C2;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.likes a:hover{
+  text-decoration: none;
+  color: #9B9B9B;
+}
+
+.editor-title{
+  margin-bottom: 30px;
+}
+/*----------------------------------------------------------------------------
+--------------------------- Book Sumary Page Styling --------------------------
+-----------------------------------------------------------------------------*/
+#author-bio{
+    color: #9B9B9B;
+}
+
+#details{
+
+}
+
+#details:hover{
+
+}
+
+.author-details, .author-details span a{
+   color: #9B9B9B;
+}
+.author-details #author-name a{
+    font-weight:700;
+    text-decoration: none;
+}
+.author-details p{
+    font-size:15px;
+    line-height: 17px;
+}
+.author-details a{
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+.author-details a:hover{
+    color:#4FE3C2;
+}
+
+a .edit-book{
+    float:right;
+    color: #777777;
+    transition: 0.3s;
+}
+
+a .edit-book:hover{
+  text-decoration: none;
+  color:#4FE3C2;  
+}
+
+a .delete-item{
+    float:right;
+}
+
+.likes{
+  margin-bottom:20px;
+}
+
+.likes-counter i{
+  color: #555555;
+}
+
+.book-body{
+  width:85%;
+}
+/*----------------------------------------------------------------------------
+--------------------------- Comment Styling -----------------------------------
+-----------------------------------------------------------------------------*/
+.new-post{
+    padding: 16px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment-profile{
+    width:32px;
+    height:32px;
+    border-radius: 50%;
+}
+
+.new-post header,
+.posts header{
+    margin-bottom: 20px;
+}
+
+.posts .post{
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.posts .post .info{
+    color: #aaa;
+}
+
+.posts{
+  position: relative;
+}
+
+article.post{
+  background-color: #f6f9fb;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative
+}
+
+article.post p{
+  width: 100%;
+}
+
+.info a{
+    color:#555555;
+    transition:0.3s;
+}
+.info a:hover{
+    text-decoration: none;
+    color:#4FE3C2;
+}
+
+.error ul{
+    list-style:none;
+}
+/*----------------------------------------------------------------------------
+--------------------------- Footer Styling -----------------------------------
+-----------------------------------------------------------------------------*/
+#myFooter {
+    background-color: #fff;
+    color: #d2d1d1;
+    padding-top: 30px;
+}
+
+#myFooter .top{
+    background: #555555;
+    margin:40px auto;
+    height: 5px;
+    width: 80px;
+    border-radius: 50px;
+}
+
+#myFooter .footer-items ul li{
+    display:inline;
+    list-style-type:none;
+    font-weight:500;
+    font-style: normal;
+    padding-right: 15px;
+}
+
+#myFooter .footer-copyright {
+    padding-top: 3px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#myFooter .row {
+    margin-bottom: 10px;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #555555;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: #4FE3C2;
+}
+
+#myFooter .social-networks {
+    padding-top: 20px;
+    padding-bottom: 12px;
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: #555555;
+    padding: 10px;
+    text-align: center;
+    transition: 0.4s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .youtube:hover {
+    color: #ef1a1a;
+}
+
+#myFooter .instagram:hover {
+    color: #00aced;
+}
+
+/*----------------------------------------------------------------------------
+--------------------------- Media Queries -----------------------------------
+-----------------------------------------------------------------------------*/
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+          
+      .posted-avatar{
+            border-radius: 50%;
+            height:45px;
+            width:45px;
+        }
+      
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+      
+      /*Homepage Styles */
+      #services .container{
+          padding-bottom: 0px;
+        }
+    
+      .posted-avatar{
+            display:none;
+        }
+
+      .posted-avatar-blog{
+        display:none;
+      }
+       #myFooter {
+        text-align: center;
+    }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+      /*Homepage Styles */
+      #header .block{
+          padding-left: 30px;
+        }
+
+      #header .block img{
+       height:100px;
+       margin-bottom: 10px;
+    }
+      .nav-profile{
+        display:none;
+    }
+
+      .navbar .container .nav li a:before{
+      content: "";
+      position: absolute;
+      width: 0%;
+      background-color: #fff;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+    }
+
+    .navbar .container .nav li a:hover:before{
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+    }
+
+    #myFooter {
+        text-align: center;
+    }
+  }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        /*Homepage Styles */
+        #header .block img{
+            height:70px;
+            margin-bottom: 10px;
+        }
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }
+
